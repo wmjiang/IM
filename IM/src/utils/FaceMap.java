@@ -1,0 +1,83 @@
+package utils;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class FaceMap {
+	 public static final Map<String,String> faceMap;
+	
+	static{
+		faceMap=  new HashMap<String,String>();
+		faceMap.put("[微笑]","0.gif");
+		faceMap.put("[嘻嘻]","1.gif");
+		faceMap.put("[哈哈]","2.gif");
+		faceMap.put("[可爱]","3.gif");
+		faceMap.put("[可怜]","4.gif");
+		faceMap.put("[挖鼻]","5.gif");
+		faceMap.put("[吃惊]","6.gif");
+		faceMap.put("[害羞]","7.gif");
+		faceMap.put("[挤眼]","8.gif");
+		faceMap.put("[闭嘴]","9.gif");
+		faceMap.put("[鄙视]","10.gif");
+		faceMap.put("[爱你]","11.gif");
+		faceMap.put("[泪]","12.gif");
+		faceMap.put("[偷笑]","13.gif");
+		faceMap.put("[亲亲]","14.gif");
+		faceMap.put("[生病]","15.gif");
+		faceMap.put("[太开心]","16.gif");
+		faceMap.put("[白眼]","17.gif");
+		faceMap.put("[右哼哼]","18.gif");
+		faceMap.put("[左哼哼]","19.gif");
+		faceMap.put("[嘘]","20.gif");
+		faceMap.put("[衰]","21.gif");
+		faceMap.put("[委屈]","22.gif");
+		faceMap.put("[吐]","23.gif");
+		faceMap.put("[哈欠]","24.gif");
+		faceMap.put("[抱抱]","25.gif");
+		faceMap.put("[怒]","26.gif");
+		faceMap.put("[疑问]","27.gif");
+		faceMap.put("[馋嘴]","28.gif");
+		faceMap.put("[拜拜]","29.gif");
+		faceMap.put("[思考]","30.gif");
+		faceMap.put("[汗]","31.gif");
+		faceMap.put("[困]","32.gif");
+		faceMap.put("[睡]","33.gif");
+		faceMap.put("[钱]","34.gif");
+		faceMap.put("[失望]","35.gif");
+		faceMap.put("[酷]","36.gif");
+		faceMap.put("[色]","37.gif");
+		faceMap.put("[哼]","38.gif");
+		faceMap.put("[鼓掌]","39.gif");
+		faceMap.put("[晕]","40.gif");
+		faceMap.put("[悲伤]","41.gif");
+		faceMap.put("[抓狂]","42.gif");
+		faceMap.put("[黑线]","43.gif");
+		faceMap.put("[阴险]","44.gif");
+		faceMap.put("[怒骂]","45.gif");
+		faceMap.put("[互粉]","46.gif");
+		faceMap.put("[心]","47.gif");
+		faceMap.put("[伤心]","48.gif");
+		faceMap.put("[猪头]","49.gif");
+		faceMap.put("[熊猫]","50.gif");
+		faceMap.put("[兔子]","51.gif");
+		faceMap.put("[ok]","52.gif");
+		faceMap.put("[耶]","53.gif");
+		faceMap.put("[good]","54.gif");
+		faceMap.put("[NO]","55.gif");
+		faceMap.put("[赞]","56.gif");
+		faceMap.put("[来]","57.gif");
+		faceMap.put("[弱]","58.gif");
+		faceMap.put("[草泥马]","59.gif");
+		faceMap.put("[神马]","60.gif");
+		faceMap.put("[囧]","61.gif");
+		faceMap.put("[浮云]","62.gif");
+		faceMap.put("[给力]","63.gif");
+		faceMap.put("[围观]","64.gif");
+		faceMap.put("[威武]","65.gif");
+		faceMap.put("[奥特曼]","66.gif");
+		faceMap.put("[礼物]","67.gif");
+		faceMap.put("[钟]","68.gif");
+		faceMap.put("[话筒]","69.gif");
+		faceMap.put("[蜡烛]","70.gif");
+		faceMap.put("[蛋糕]","71.gif");}
+}

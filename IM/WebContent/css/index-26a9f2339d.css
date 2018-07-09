@@ -1,0 +1,1220 @@
+﻿html {
+    height: 100%;
+    width: 100%;
+    font-family: -apple-system, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", STHeiti, "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    transition: all .2s;
+}
+
+* html {
+    background-image: url(../images/3f4b4788e2084f528a0e7bbe33c734e1.gif);
+    background-attachment: fixed
+}
+
+.circle {
+    line-height: 100%;
+    overflow: hidden;
+    font-family: Tahoma, Helvetica;
+    font-size: 18px;
+    color: #aaa
+}
+
+.circle:hover {
+    color: #fff
+}
+
+.circle.hover {
+    color: #fff
+}
+
+.slideup {
+    opacity: 0;
+    height: 0 !important
+}
+
+a {
+    outline: 0;
+    text-decoration: none;
+    color: #359eff
+}
+
+a:hover {
+    color: #2b72ff
+}
+
+a:focus {
+    outline: 0
+}
+
+input::-ms-clear, input::-ms-reveal {
+    display: none;
+    width: 0;
+    height: 0
+}
+
+input:focus {
+    outline: 0
+}
+
+ul.options {
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+ul.options li.focus, ul.options li:hover {
+    background: #eee
+}
+
+ul.options li a {
+    color: #000
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    min-width: 560px
+}
+
+body .logo {
+    position: fixed;
+    _position: absolute;
+    _top: expression(eval(document.documentElement.scrollTop));
+    top: 0;
+    left: 0;
+    background: url(../images/logo.png) no-repeat;
+    background-size: 36px 43px;
+    background-image: -webkit-image-set(url("../images/logo.png") 1x, url("../img/logo@2x.png") 2x);
+    background-image: image-set("../images/logo.png" 1x, "../img/logo@2x.png" 2x);
+    z-index: 2;
+    height: 43px;
+    line-height: 43px;
+    padding-left: 46px;
+    margin-left: 30px;
+    margin-top: 18px;
+    font-size: 36px;
+    display: block;
+    color: #000
+}
+
+body .side {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 480px;
+    float: left;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover
+}
+
+body .side .switcher {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 10px;
+    margin-bottom: 10px;
+    text-align: center
+}
+
+body .side .container {
+    position: relative
+}
+
+body .side .container img {
+    min-height: 100%;
+    margin: 0;
+    padding: 0
+}
+
+body .top {
+    min-width: 560px;
+    top: 0;
+    left: 0;
+    text-align: right;
+    position: relative;
+    z-index: 1
+}
+
+body .top .item {
+    float: right;
+    margin: 20px 40px 0 0;
+    font-size: 16px;
+    color: rgba(0, 0, 0, .902);
+    padding: 10px 0 0;
+    line-height: 24px
+}
+
+body .top .item > a {
+    display: inline-block;
+    color: #000
+}
+
+body .top .feedback {
+    margin-right: 60px
+}
+
+body .top .feedback a {
+    color: #000;
+    opacity: .6
+}
+
+body .top .feedback a:hover {
+    opacity: 1
+}
+
+body .top .lianghao {
+    padding: 0
+}
+
+@media (max-width: 900px) {
+    body .top .lianghao {
+        display: none
+    }
+}
+
+body .top .lianghao .lianghao-entry {
+    position: relative;
+    display: block;
+    float: right
+}
+
+body .top .lianghao .lianghao-entry > img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1
+}
+
+body .top .lianghao .lianghao-entry > div {
+    border-radius: 6px;
+    background: #f54444;
+    background: linear-gradient(126deg, #fc4754, #ff794c) #f54444;
+    height: 24px;
+    line-height: 24px;
+    font-size: 16px;
+    margin: 10px 0 0 5px;
+    padding: 0 10px 0 24px;
+    color: #fff;
+    font-weight: 300
+}
+
+body .top .lianghao .lianghao-detail {
+    clear: both;
+    width: 290px;
+    border-radius: 6px;
+    border: solid 1px #eee;
+    background-color: #fff;
+    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, .12);
+    overflow: hidden;
+    padding: 0
+}
+
+body .top .lianghao .lianghao-detail .upper {
+    border-bottom: solid 1px #f0f0f0;
+    height: 49px;
+    position: relative
+}
+
+body .top .lianghao .lianghao-detail .upper .search-icon {
+    display: block;
+    position: relative;
+    text-align: center;
+    border-left: solid 1px #eee;
+    height: 49px;
+    width: 40px;
+    background: 0 0;
+    float: right;
+    z-index: 1;
+    transition: none
+}
+
+body .top .lianghao .lianghao-detail .upper .search-icon .search-icon-img {
+    transition: none;
+    margin: auto;
+    background: url(../images/search.png) no-repeat transparent;
+    background-image: -webkit-image-set(url("../images/search.png") 1x, url("../img/search@2x.png") 2x);
+    background-image: image-set("../images/search.png" 1x, "../img/search@2x.png" 2x);
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0
+}
+
+body .top .lianghao .lianghao-detail .upper .search-icon:hover {
+    background-color: #f54444;
+    background-image: linear-gradient(54deg, #fc4754, #ff794c)
+}
+
+body .top .lianghao .lianghao-detail .upper .search-icon:hover .search-icon-img {
+    background-image: url(../images/search-hover.png);
+    background-image: -webkit-image-set(url("../images/search-hover.png") 1x, url("../img/search-hover@2x.png") 2x);
+    background-image: image-set("../images/search-hover.png" 1x, "../img/search-hover@2x.png" 2x)
+}
+
+body .top .lianghao .lianghao-detail .upper .search {
+    border: none;
+    margin-right: 41px;
+    background: 0 0;
+    height: 49px;
+    line-height: 49px;
+    font-size: 16px;
+    padding: 0 10px
+}
+
+body .top .lianghao .lianghao-detail .upper .search .search-placeholder {
+    position: absolute;
+    left: 10px;
+    top: 0;
+    background: #fff;
+    font-weight: lighter;
+    color: #aaa
+}
+
+body .top .lianghao .lianghao-detail .upper .search input {
+    width: 100%;
+    background: 0 0;
+    position: relative;
+    z-index: 2;
+    font-size: 16px
+}
+
+body .top .lianghao .lianghao-detail .bottom {
+    padding-top: 24px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 1
+}
+
+body .top .lianghao .lianghao-detail .bottom div {
+    margin-bottom: 24px
+}
+
+body .top .lianghao .lianghao-detail .bottom .suggest-detail {
+    font-size: 16px
+}
+
+body .top .lianghao .lianghao-detail .bottom .suggest-detail a {
+    margin: 0 5px
+}
+
+body .top .mail-entry {
+    opacity: .6
+}
+
+body .top .mail-entry:hover {
+    opacity: 1
+}
+
+body .top .mail-entry a {
+    color: #000;
+    background: url(../images/mail-entry.png) no-repeat;
+    background-image: -webkit-image-set(url("../images/mail-entry.png") 1x, url("../img/mail-entry@2x.png") 2x);
+    background-image: image-set("../images/mail-entry.png" 1x, "../img/mail-entry@2x.png" 2x);
+    height: 15px;
+    line-height: 15px;
+    margin: 4.5px 0;
+    padding: 0 0 0 25px
+}
+
+body .top .qq-entry {
+    opacity: .6
+}
+
+body .top .qq-entry:hover {
+    opacity: 1
+}
+
+body .top .qq-entry a {
+    margin: 3px 0;
+    color: #000;
+    display: block;
+    height: 18px;
+    line-height: 18px;
+    padding: 0 0 0 21px;
+    background: url(../images/qq-entry.png) no-repeat;
+    background-image: -webkit-image-set(url("../images/qq-entry.png") 1x, url("../img/qq-entry@2x.png") 2x);
+    background-image: image-set("../images/qq-entry.png" 1x, "../img/qq-entry@2x.png" 2x)
+}
+
+body .top .language-entry {
+    opacity: .6;
+    color: #000
+}
+
+body .top .language-entry:hover {
+    opacity: 1
+}
+
+body .top .language-entry > ul {
+    list-style: none;
+    text-align: left;
+    padding-top: 8px
+}
+
+body .top .language-entry > ul li {
+    padding-top: 16px
+}
+
+body .top .language-entry > ul li a {
+    color: #888
+}
+
+body .top .language-entry > ul li .cur, body .top .language-entry > ul li a:hover {
+    color: #000
+}
+
+body .main-wraper {
+    margin-left: 480px;
+    position: relative;
+    height: 100%
+}
+
+body .main-wraper .upgrade-tips {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: #fef9cc;
+    text-align: center;
+    font-size: 14px;
+    color: #666
+}
+
+body .main {
+    position: absolute;
+    padding-bottom: 10px;
+    top: 100px;
+    width: 100%
+}
+
+body .main > .form {
+    position: relative;
+    margin: 0 auto;
+    width: 480px
+}
+
+body .main > .form .welcome {
+    font-size: 44px;
+    margin-bottom: 20px
+}
+
+body .main > .form .header {
+    font-size: 28px;
+    margin-bottom: 64px;
+    line-height: 1.2;
+    color: #333
+}
+
+body .main > .form .header a {
+    font-size: 24px
+}
+
+body .main > .form .free-lianghao-entry, body .main > .form .qq-mail-entry {
+    float: right
+}
+
+body .main > .form .guide {
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 20px
+}
+
+body .main > .form .guide .guide-title {
+    color: #333;
+    margin: 8px 0
+}
+
+body .main > .form .guide .guide-item {
+    color: #737373
+}
+
+body .main > .form .lianghao-area {
+    font-size: 24px;
+    color: rgba(0, 0, 0, .8);
+    margin-bottom: 20px
+}
+
+body .main > .form .lianghao-area .lianghao-number {
+    font-size: 32px;
+    color: #777
+}
+
+body .main > .form .lianghao-area .lianghao-number .linght-num {
+    color: #ff551a
+}
+
+body .main > .form .lianghao-area .lianghao-mean {
+    font-size: 14px;
+    color: #737373
+}
+
+body .main > .form .lianghao-area .change-lianghao {
+    font-size: 14px
+}
+
+body .main > .form form .options {
+    border: 1px #b2b2b2 solid;
+    background-color: #fff;
+    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, .15);
+    font-size: 20px;
+    overflow-y: scroll;
+    position: absolute;
+    z-index: 2
+}
+
+body .main > .form form .options a {
+    line-height: 48px;
+    height: 48px
+}
+
+body .main > .form form .input-area {
+    position: relative
+}
+
+body .main > .form form .input-area .input-flags {
+    position: absolute;
+    right: 0;
+    height: 52px;
+    z-index: 1
+}
+
+body .main > .form form .input-area .input-flags .eye {
+    background: url(../images/eye.png) no-repeat;
+    background-image: -webkit-image-set(url("../images/eye.png") 1x, url("../img/eye@2x.png") 2x);
+    background-image: image-set("../images/eye.png" 1x, "../img/eye@2x.png" 2x);
+    width: 44px;
+    height: 36px;
+    display: block;
+    float: right;
+    margin: 8px 10px
+}
+
+body .main > .form form .input-area .input-flags .eye.close {
+    background: url(../images/eye-close.png) no-repeat;
+    background-image: -webkit-image-set(url("../images/eye-close.png") 1x, url("../img/eye-close@2x.png") 2x);
+    background-image: image-set("../images/eye-close.png" 1x, "../img/eye-close@2x.png" 2x)
+}
+
+body .main > .form form .input-area .input-flags .input-ok {
+    background: url(../images/tick.png) no-repeat;
+    width: 20px;
+    height: 15px;
+    display: block;
+    float: right;
+    margin: 18.5px 10px
+}
+
+body .main > .form form .input-area .input-placeholder {
+    position: absolute;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 16px 20px;
+    background: #fff;
+    z-index: -1;
+    font-weight: lighter;
+    color: #aaa
+}
+
+body .main > .form form .input-area .input-outer {
+    background: 0 0;
+    margin: 24px 0 0
+}
+
+body .main > .form form .input-area .input-outer .qqmail, body .main > .form form .input-area .input-outer input {
+    border: 1px #aaa solid;
+    border-radius: 4px;
+    background: 0 0;
+    text-align: left;
+    font-size: 20px;
+    width: 438px;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px
+}
+
+body .main > .form form .input-area .input-outer .password-raw {
+    font-size: 20px;
+    background: #fff;
+    position: absolute;
+    margin: 0 20px;
+    width: 438px;
+    height: 50px;
+    line-height: 50px;
+    top: 1px;
+    left: 1px
+}
+
+body .main > .form form .input-area .input-outer input:hover {
+    border-color: #777
+}
+
+body .main > .form form .input-area .input-outer input:focus {
+    border-color: #549df8
+}
+
+body .main > .form form .input-area .input-outer input.error {
+    color: #ff5b5b;
+    border-color: #ff5b5b
+}
+
+body .main > .form form .password-tips-group {
+    height: 78px;
+    line-height: 1;
+    overflow: hidden
+}
+
+body .main > .form form .password-tips-group .password-tips {
+    background: url(../images/info.png) no-repeat;
+    background-image: -webkit-image-set(url("../images/info.png") 1x, url("../img/info@2x.png") 2x);
+    background-image: image-set("../images/info.png" 1x, "../img/info@2x.png" 2x);
+    padding: 0 0 0 24px;
+    font-size: 14px;
+    line-height: 18px;
+    margin: 8px 0 8px
+}
+
+body .main > .form form .password-tips-group .password-tips.ok {
+    background-image: url(../images/green.png);
+    background-image: -webkit-image-set(url("../images/green.png") 1x, url("../img/green@2x.png") 2x);
+    background-image: image-set("../images/green.png" 1x, "../img/green@2x.png" 2x)
+}
+
+body .main > .form form .error-tips-wrap {
+    padding-top: 8px;
+    height: 18px;
+    overflow: hidden;
+    position: relative;
+    line-height: 1
+}
+
+body .main > .form form .error-tips-wrap .error-tips {
+    background: url(../images/error.png) no-repeat;
+    background-image: -webkit-image-set(url("../images/error.png") 1x, url("../img/error@2x.png") 2x);
+    background-image: image-set("../images/error.png" 1x, "../img/error@2x.png" 2x);
+    padding: 0 0 0 24px;
+    color: #ff5b5b;
+    font-size: 14px;
+    line-height: 18px;
+    height: 18px;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0
+}
+
+body .main > .form form .error-tips-wrap .error-tips.slideup {
+    top: -26px
+}
+
+body .main > .form form .input-tips-wrap {
+    position: relative;
+    overflow: hidden;
+    height: 14px;
+    line-height: 1
+}
+
+body .main > .form form .input-tips-wrap .input-tips {
+    font-size: 14px;
+    height: 14px;
+    color: #999;
+    white-space: nowrap;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0
+}
+
+body .main > .form form .selector {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 52px;
+    line-height: 52px;
+    padding-right: 12px
+}
+
+body .main > .form form .selector img {
+    vertical-align: middle
+}
+
+body .main > .form form .qqmail-area .mail-area {
+    width: 297px
+}
+
+body .main > .form form .qqmail-area .mail-area .mail {
+    border-radius: 4px;
+    width: 255px
+}
+
+body .main > .form form .qqmail-area .qqmail-outer {
+    float: right;
+    margin: 0;
+    width: 168px
+}
+
+body .main > .form form .qqmail-area .qqmail-outer .qqmail {
+    padding: 0 10px;
+    width: 146px;
+    display: block
+}
+
+body .main > .form form .qqmail-area .qqmail-outer .qqmail-list {
+    border-radius: 4px;
+    overflow: visible;
+    width: 166px;
+    top: 51px
+}
+
+body .main > .form form .qqmail-area .qqmail-outer .qqmail-list li {
+    padding: 0 10px
+}
+
+body .main > .form form .input-area.code-area, body .main > .form form .input-area.nation-area {
+    width: 154px
+}
+
+body .main > .form form .input-area.code-area input.code, body .main > .form form .input-area.code-area input.nation, body .main > .form form .input-area.nation-area input.code, body .main > .form form .input-area.nation-area input.nation {
+    width: 112px
+}
+
+body .main > .form form .input-area.phone-area {
+    float: right
+}
+
+body .main > .form form .input-area.phone-area .input-outer {
+    margin: 0
+}
+
+body .main > .form form .input-area.phone-area .input-outer input.phone {
+    width: 265px
+}
+
+body .main > .form form .send-sms {
+    border: 1px #3083ff solid;
+    border-radius: 4px;
+    background-color: #3487ff;
+    box-shadow: 0 5px 8px 0 rgba(24, 95, 255, .1);
+    color: #fff;
+    text-align: center;
+    font-weight: lighter;
+    background-image: linear-gradient(0deg, #398bff, #3083ff);
+    float: right;
+    width: 307px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px
+}
+
+body .main > .form form .send-sms:focus, body .main > .form form .send-sms:hover {
+    background-color: #3580eb;
+    background-image: linear-gradient(0deg, #3580eb, #2c79eb)
+}
+
+body .main > .form form .send-sms.disabled {
+    color: #ccc;
+    background-color: #f0f0f0;
+    background-image: none;
+    border-color: transparent;
+    box-shadow: none
+}
+
+body .main > .form form .country {
+    top: 51px;
+    width: 480px;
+    height: 200px
+}
+
+body .main > .form form .country li {
+    padding: 0 20px
+}
+
+body .main > .form form .submit {
+    border: 1px #3083ff solid;
+    border-radius: 4px;
+    background-color: #3487ff;
+    box-shadow: 0 5px 8px 0 rgba(24, 95, 255, .1);
+    color: #fff;
+    text-align: center;
+    font-weight: lighter;
+    background-image: linear-gradient(0deg, #398bff, #3083ff);
+    width: 478px;
+    height: 60px;
+    margin: 40px 0 8px;
+    font-size: 24px
+}
+
+body .main > .form form .submit:focus, body .main > .form form .submit:hover {
+    background-color: #3580eb;
+    background-image: linear-gradient(0deg, #3580eb, #2c79eb)
+}
+
+body .main > .form form .submit.disabled {
+    color: #ccc;
+    background-color: #f0f0f0;
+    background-image: none;
+    border-color: transparent;
+    box-shadow: none
+}
+
+body .main > .form form .agreement {
+    margin-top: 16px;
+    line-height: 18px;
+    font-size: 14px
+}
+
+body .main > .form form .agreement #agree, body .main > .form form .agreement #qzone {
+    display: none
+}
+
+body .main > .form form .agreement .checkbox {
+    line-height: 30px;
+    font-size: 13px;
+    color: #aaa
+}
+
+body .main > .form form .agreement .checkbox img {
+    vertical-align: middle
+}
+
+body .main > .form form .agreement .triangle-down {
+    height: 0;
+    width: 0;
+    border-width: 5px;
+    border-style: solid dashed dashed dashed;
+    border-color: #aaa transparent transparent transparent;
+    font-size: 0;
+    vertical-align: middle
+}
+
+body .main > .form form .agreement .triangle-up {
+    height: 0;
+    width: 0;
+    border-width: 5px;
+    border-style: dashed dashed solid dashed;
+    border-color: transparent transparent #aaa transparent;
+    font-size: 0;
+    vertical-align: middle
+}
+
+body .main > .form form .agreement .agreement-list {
+    padding-left: 18px
+}
+
+body .main > .form form .agreement .agreement-list a {
+    display: block
+}
+
+body .main > .lianghao-rule {
+    max-width: 886px;
+    position: relative;
+    margin: 112px auto 0;
+    border-top: solid 1px #eee;
+    z-index: 0;
+    padding: 0 10px;
+    color: #333
+}
+
+body .main > .lianghao-rule .rule-title {
+    font-size: 32px;
+    line-height: 68px;
+    color: #333
+}
+
+body .main > .lianghao-rule .rule {
+    font-size: 14px;
+    line-height: 1.5
+}
+
+body .main > .succ {
+    position: relative;
+    margin: 0 auto;
+    text-align: center
+}
+
+body .main > .succ .succ-logo {
+    background: url(../images/succ.png) no-repeat;
+    background-image: -webkit-image-set(url("../images/succ.png") 1x, url("../img/succ@2x.png") 2x);
+    background-image: image-set("../images/succ.png" 1x, "../img/succ@2x.png" 2x);
+    background-size: 80px 80px;
+    margin: 0 auto;
+    width: 80px;
+    height: 80px
+}
+
+body .main > .succ .reg-succ {
+    padding-top: 16px;
+    font-size: 28px;
+    line-height: 1;
+    color: #000
+}
+
+body .main > .succ .qq-number {
+    font-size: 32px;
+    color: #000;
+    margin-top: 40px
+}
+
+body .main > .succ .qq-number .download-number {
+    padding: 0 10px
+}
+
+body .main > .succ .lianghao, body .main > .succ .phone-tips {
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 8px;
+    margin-top: 28px;
+    line-height: 1
+}
+
+body .main > .succ .lianghao {
+    margin-top: 40px
+}
+
+body .main > .succ .othermail, body .main > .succ .qqmail {
+    font-size: 20px;
+    color: #000;
+    margin: 10px 0
+}
+
+body .main > .succ .warning {
+    font-size: 14px;
+    color: #ff1818;
+    line-height: 1
+}
+
+body .main > .succ .goto-mail, body .main > .succ .login {
+    border: 1px #3083ff solid;
+    border-radius: 4px;
+    background-color: #3487ff;
+    box-shadow: 0 5px 8px 0 rgba(24, 95, 255, .1);
+    color: #fff;
+    text-align: center;
+    font-weight: lighter;
+    background-image: linear-gradient(0deg, #398bff, #3083ff);
+    font-size: 24px;
+    width: 400px;
+    height: 62px;
+    margin: 56px auto 0 auto
+}
+
+body .main > .succ .goto-mail:focus, body .main > .succ .goto-mail:hover, body .main > .succ .login:focus, body .main > .succ .login:hover {
+    background-color: #3580eb;
+    background-image: linear-gradient(0deg, #3580eb, #2c79eb)
+}
+
+body .main > .succ .download-qq-outer {
+    font-size: 18px;
+    line-height: 38px;
+    margin-top: 70px
+}
+
+body .main > .succ .download-qq-outer .qq {
+    color: #000
+}
+
+body .main > .succ .download-qq-outer .download-qq {
+    color: #3083ff
+}
+
+body .main > .succ .other-number {
+    margin: 100px auto 0;
+    width: 480px
+}
+
+body .main > .succ .other-number > .tips {
+    font-size: 14px;
+    color: #aaa;
+    margin-bottom: 24px;
+    padding-top: 24px;
+    border-top: solid 1px #eee
+}
+
+body .main > .succ .other-number > .friend-list {
+    margin: 0 auto !important;
+    padding: 0;
+    margin: 0;
+    list-style: none
+}
+
+body .main > .succ .other-number > .friend-list > a {
+    display: inline-block;
+    position: relative;
+    margin: 10px 10px;
+    width: 130px;
+    vertical-align: top
+}
+
+body .main > .succ .other-number > .friend-list > a .avatar {
+    border-color: #fff;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: block;
+    margin: 0 auto
+}
+
+body .main > .succ .other-number > .friend-list > a .add {
+    background-image: url(../images/add.png);
+    background-image: -webkit-image-set(url("../images/add.png") 1x, url("../img/add@2x.png") 2x);
+    background-image: image-set("../images/add.png" 1x, "../img/add@2x.png" 2x);
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    top: 39px;
+    right: 39px
+}
+
+body .main > .succ .other-number > .friend-list > a:hover .add {
+    background-image: url(../images/add-hover.png);
+    background-image: -webkit-image-set(url("../images/add-hover.png") 1x, url("../img/add-hover@2x.png") 2x);
+    background-image: image-set("../images/add-hover.png" 1x, "../img/add-hover@2x.png" 2x)
+}
+
+body .main > .succ .other-number > .friend-list > a .succ {
+    background-image: url(../images/succ2.png);
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    top: 39px;
+    right: 39px;
+    margin: 0
+}
+
+body .main > .succ .other-number > .friend-list > a .nickname {
+    display: block;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #333;
+    text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    -moz-binding: url(ellipsis.xml#ellipsis);
+    white-space: nowrap;
+    margin: 10px auto 0;
+    overflow: hidden
+}
+
+body .main > .succ .other-number > .friend-list > a .tips {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #bbb;
+    text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    -moz-binding: url(ellipsis.xml#ellipsis);
+    white-space: nowrap;
+    overflow: hidden;
+    height: 24px
+}
+
+body .main > .succ .active-logo {
+    background: url(../images/mail-active.png) no-repeat;
+    background-image: -webkit-image-set(url("../images/mail-active.png") 1x, url("../img/mail-active@2x.png") 2x);
+    background-image: image-set("../images/mail-active.png" 1x, "../img/mail-active@2x.png" 2x);
+    background-size: 80px 80px;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto
+}
+
+body .main > .succ .need-active {
+    margin: 16px 0 40px;
+    font-size: 28px;
+    line-height: 1;
+    color: #000
+}
+
+body .main > .succ .mail-has-send {
+    margin: 16px 0;
+    font-size: 24px;
+    line-height: 1;
+    color: #000
+}
+
+body .main > .succ .active-tips {
+    font-size: 14px;
+    color: #000
+}
+
+body .main > .succ .need-help {
+    font-size: 24px;
+    line-height: 2;
+    color: #999;
+    border-top: solid 1px #eee;
+    width: 400px;
+    margin: 100px auto 0 auto;
+    text-align: left
+}
+
+body .main > .succ .help-list {
+    margin: 0 auto;
+    width: 400px;
+    text-align: left;
+    font-size: 14px
+}
+
+body .main > .succ .help-list div.need-tips {
+    color: #737373;
+    margin-top: 5px
+}
+
+body .main > .succ .help-list a.need-tips {
+    display: block;
+    margin-top: 5px
+}
+
+body .main > .error {
+    text-align: center;
+    margin: 0 auto;
+    position: relative
+}
+
+body .main > .error .error-logo {
+    width: 80px;
+    height: 80px;
+    background: url(../images/alert.png) no-repeat;
+    background-image: -webkit-image-set(url("../images/alert.png") 1x, url("../img/alert@2x.png") 2x);
+    background-image: image-set("../images/alert.png" 1x, "../img/alert@2x.png" 2x);
+    background-size: 80px 80px;
+    font-size: 34px;
+    color: #000;
+    margin: 0 auto
+}
+
+body .main > .error .error-msg {
+    font-size: 28px;
+    color: #000;
+    padding: 60px 0 70px
+}
+
+body .main > .error .error-link {
+    padding-top: 20px;
+    font-size: 18px;
+    color: #aaa
+}
+
+body .main > .error .error-link a {
+    padding: 0 10px
+}
+
+body .main > .footer {
+    font-size: 14px;
+    color: #bbb;
+    text-align: center;
+    margin: 30px 0;
+    font-weight: lighter
+}
+
+body .main > .footer.bottom {
+    position: fixed;
+    bottom: 0
+}
+
+body .main > .sms-up-dialog {
+    background-color: #fff;
+    border-radius: 4px;
+    position: absolute;
+    z-index: 101;
+    width: 378px;
+    padding: 50px;
+    top: 50%;
+    left: 50%;
+    margin: -230px 0 0 -239px
+}
+
+body .main > .sms-up-dialog .please {
+    font-size: 24px;
+    color: #777;
+    margin-bottom: 30px
+}
+
+body .main > .sms-up-dialog .target, body .main > .sms-up-dialog .verb {
+    font-size: 24px;
+    line-height: 36px;
+    color: #000
+}
+
+body .main > .sms-up-dialog .target {
+    font-weight: bolder
+}
+
+body .main > .sms-up-dialog .price {
+    font-size: 14px;
+    line-height: 30px;
+    color: #666
+}
+
+body .main > .sms-up-dialog .error-msg {
+    margin-top: 16px;
+    font-size: 14px;
+    color: #fd2a2a
+}
+
+body .main > .sms-up-dialog .submit {
+    margin-top: 44px;
+    width: 378px;
+    height: 60px;
+    border: 1px #3083ff solid;
+    border-radius: 4px;
+    background-color: #3487ff;
+    box-shadow: 0 5px 8px 0 rgba(24, 95, 255, .1);
+    color: #fff;
+    text-align: center;
+    font-weight: lighter;
+    background-image: linear-gradient(0deg, #398bff, #3083ff);
+    font-size: 24px
+}
+
+body .main > .sms-up-dialog .submit:focus, body .main > .sms-up-dialog .submit:hover {
+    background-color: #3580eb;
+    background-image: linear-gradient(0deg, #3580eb, #2c79eb)
+}
+
+body .main > .verify-dialog {
+    border-radius: 4px;
+    background-color: #fff;
+    width: 300px;
+    padding: 36px 40px;
+    margin: -310px 0 0 -190px;
+    position: absolute;
+    z-index: 102;
+    top: 50%;
+    left: 50%
+}
+
+body .main > .sms-up-dialog .close, body .main > .verify-dialog .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: url(../images/close.png) transparent;
+    width: 30px;
+    height: 30px;
+    color: #666
+}
+
+body .main > .sms-up-dialog .close:hover, body .main > .verify-dialog .close:hover {
+    background-image: url(../images/close-hover.png)
+}
+
+body .sms-up-background {
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: .5;
+    filter: alpha(opacity=50)
+}
